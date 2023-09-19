@@ -1,0 +1,18 @@
+body{
+    background-color: #664d03;
+}
+.card{
+    background-color: bisque;
+}
+.card-body{
+    background-color: darkgrey;
+}
+.card-header{
+    background-color: coral;
+}
+.list-group{
+    background-color: beige;
+}
+.navbar{
+    background-color: black;
+}
