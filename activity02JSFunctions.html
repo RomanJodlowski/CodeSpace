@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity02JS Functions</title>
+</head>
+<body>
+
+<h4>Write a JavaScript function to calculate the factorial of a number
+    (a non-negative integer n ). The function accepts the number as an argument.</h4>
+
+<button onclick="enterNumbers()">Try it</button>
+
+<!--get output by id-->
+<p id="output"></p>
+
+<script>
+let a = "";
+
+    // function to create the factorial number
+    function enterNumbers() {
+        let userInput = prompt("Please enter number (non-negative): ", a);
+        if (userInput >= 0)
+        {
+            let fac = 1;
+            for (let i = 1; i <= userInput; i++)
+            {
+                fac *= i;
+            }
+            document.getElementById("output").innerHTML =
+                "The factorial of a number " + userInput + " is: " + fac;
+        }
+        else
+        {
+            alert("Must be the positive number!")
+        }
+    }
+
+</script>
+
+</body>
+</html>

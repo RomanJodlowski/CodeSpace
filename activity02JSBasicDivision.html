@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script</title>
+</head>
+<body>
+
+<h1>Numbers Division</h1>
+
+<p>Click the button to start divide two numbers.</p>
+
+<button onclick="divideNumbers()">Try it</button>
+
+<p id="userInput"></p>
+
+<script>
+    let a = "";
+    let b = "";
+
+    function divideNumbers() {
+        let numbers1 = prompt("Please enter first number: ", a);
+        let numbers2 = prompt("Please enter second number: ", b);
+        if (numbers1 != null && numbers2 != null) {
+            document.getElementById("userInput").innerHTML =
+                "The output of the numbers division is:  " + numbers1 / numbers2;
+        }
+    }
+</script>
+
+</body>
+</html>

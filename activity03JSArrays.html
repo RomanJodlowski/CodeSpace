@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity03JSArrays</title>
+</head>
+<body>
+
+<h4>Write a JavaScript program to find the maximum and minimum value of an array.</h4>
+
+<!--get output by id-->
+<p id="output"></p>
+
+<script>
+    // create the array
+    let numbers = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49];
+
+    // print the min and max value of the array using inner HTML
+    document.getElementById("output").innerHTML = "The array of " + numbers +
+        " numbers the minimum value is: " + (Math.min.apply(Math, numbers)) +
+        " and the maximum value is: " + (Math.max.apply(Math, numbers));
+</script>
+
+</body>
+</html>

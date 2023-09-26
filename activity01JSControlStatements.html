@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity01JS Control Statements</title>
+</head>
+<body>
+
+<h1>Three Numbers Comparison</h1>
+
+<p>Click the button to start</p>
+
+<button onclick="enterNumbers()">Try it</button>
+
+<p id="userInput"></p>
+
+<script>
+    let a = "";
+    let b = "";
+    let c = "";
+
+    function enterNumbers() {
+        let numbers1 = prompt("Please enter first number: ", a);
+        let numbers2 = prompt("Please enter second number: ", b);
+        let numbers3 = prompt("Please enter third number: ", c);
+        if (numbers1 != null && numbers2 != null && numbers3 != null) {
+            if (numbers1 === numbers2 && numbers2 === numbers3) {
+                document.getElementById("userInput").innerHTML =
+                    "This three numbers are equal";
+            }
+            else if (numbers1 !== numbers2 && numbers2 !== numbers3) {
+                document.getElementById("userInput").innerHTML =
+                    "This three numbers are different";
+            }
+            else {
+                document.getElementById("userInput").innerHTML =
+                    "Neither all are equal or different";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

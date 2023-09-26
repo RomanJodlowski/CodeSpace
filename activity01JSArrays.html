@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity01JS Arrays</title>
+</head>
+<body>
+
+<h4>Write a JavaScript program to sum values of an array.</h4>
+<!--get output by id-->
+<p id="output"></p>
+
+<script>
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sum = 0;
+
+    for (let i = 0; i < numbers.length; i++)
+    {
+    sum += numbers[i];
+    }
+    document.getElementById("output").innerHTML = "The array value: " + numbers + ", is: " + sum;
+</script>
+
+</body>
+</html>

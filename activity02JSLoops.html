@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity02JS Loops</title>
+</head>
+<body>
+
+<h1>Multiplication Table</h1>
+
+<p>Click the button to start</p>
+
+<button onclick="enterNumbers()">Try it</button>
+
+<script>
+    let a = "";
+    let b = 0;
+
+    function enterNumbers() {
+
+        let userNumber = prompt("Please enter the number (1 - 10): ", a);
+
+            if (10 >= userNumber > 0) {
+
+                while (b < 10) {
+                        alert(userNumber + " * " + (b + 1) + " = " + userNumber * (b += 1));
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

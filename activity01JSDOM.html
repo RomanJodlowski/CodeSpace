@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity01JS DOM</title>
+
+    <style>
+        #text {
+            border: 1px solid black;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body style="text-align: center">
+
+<div id="text">
+<p>Vanilla JS DOM</p>
+</div>
+<br>
+
+<div>
+    <button onclick="js_style()">Style</button>
+</div>
+
+<script>
+
+    function js_style()
+    {
+        let x = document.getElementById("text").querySelectorAll("p");
+        for (let i = 0; i < x.length; i++)
+        {
+            x[i].style.backgroundColor = "yellow";
+            x[i].style.color = "blue";
+        }
+    }
+
+</script>
+
+</body>
+</html>

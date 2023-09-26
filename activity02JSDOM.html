@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vanilla activity 2</title>
+
+    <style>
+        #form {
+            border: 1px solid olive;
+            margin: 5px;
+        }
+        label, input {
+            display: compact;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+<body style = "text-align: center;">
+
+<h1 style = "color: green;">Calculate The Volume Of Sphere</h1>
+<h2>Input radius value and get the volume of a sphere.</h2>
+
+<form action="" method="post" class="row g-3" id="form">
+    <div class="col-md-6">
+        <label for="radiusInput" class="form-label">Radius</label>
+        <input type="number" name="radiusInput" id="radiusInput" required>
+    </div>
+    <div class="cl-md-6">
+        <label for="volumeOutput" class="form-label">Volume</label>
+        <input type="number" name="volumeOutput" id="volumeOutput">
+    </div>
+    <div class="co-md-6">
+        <button type="submit" value="calculate" id="confirm" class="btn btn-primary mb-3">Calculate</button>
+    </div>
+    <br>
+</form>
+<script>
+    function calculateSphere()
+    {
+        let volume;
+
+        let radius = document.getElementById("radiusInput").value;
+        radius = Math.abs(radius);
+        volume = (4/3) * Math.PI * Math.pow(radius, 2);
+        volume = volume.toFixed(2);
+        document.getElementById("volumeOutput").value = volume;
+        return false;
+    }
+    window.onload = document.getElementById("form").onsubmit = calculateSphere;
+</script>
+
+</body>
+</html>
